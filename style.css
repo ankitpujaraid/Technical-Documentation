@@ -1,0 +1,77 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+nav#navbar {
+	grid-area: navbar;
+	position: fixed;
+    color: #7300ff;
+    background-color: rgb(219, 219, 255);
+    padding: 40px;
+}
+
+nav#navbar a {
+	display: block;
+	border: 3px solid #4800ff;
+	padding: 5px;
+	margin: 10px 0;
+	text-decoration: none;
+	color: #ff0080;
+    background-color: #fff;
+}
+
+main#main-doc {
+	grid-area: mainContent;
+    color: #1a1a1a;
+}
+
+header {
+	font-size: 1.5rem;
+	font-weight: bold;
+    color: #ff0080;
+}
+
+#content{
+    color: #7300ff;
+}
+
+#content img{
+    width: 300px;
+    display: block;
+}
+
+#content a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff0080;
+    font-weight: bold;
+    animation: cchange 1s infinite;
+}
+
+@keyframes cchange{
+    0%{
+        color: greenyellow;
+    }
+    25%{
+        color: rgb(255, 0, 255);
+    }
+    50%{
+        color: #4800ff;
+    }
+    75%{
+        color: red;
+    }
+    100%{
+        color: aqua;
+    }
+}
+
+
+
